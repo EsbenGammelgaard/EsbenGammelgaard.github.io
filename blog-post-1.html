@@ -83,69 +83,24 @@
 <!-- Figure -->		           <img src="assets/images/Blog2/pySQL.png" alt="py.png" style="width:100%">
 				
 				    
-<!-- Paragraph -->	            <p> </p>
-<!-- Subtitel -->		    <h3 class="mt-5 mb-3">Code Block Example</h3>
+<!-- Paragraph -->	            <p> In this first article of the blog, I would like to showcase how I work with python, the pyodbc, and the pandas module in order to access, manipulate, and upload data to my local SQL server. 
+				    The SQL server was created in Microsoft SQL Server Management Studio 18 and is located on my personal pc.
+				    The data that is Uploaded to my SQL server originates from <a href="https://www.kaggle.com/benroshan/ecommerce-data?select=Sales+target.csv">Kaggle.com</a> 
+				    and contains data regarding e-commerce data for an Indian webshop. 
+				    The database consists of three files containing Lists of Orders, Order Details, and Sales Targets for a one-year period. 
+				    From <a href="https://www.kaggle.com/benroshan/ecommerce-data?select=Sales+target.csv">Kaggle.com</a> 
+				    the data is downloaded as .csv files. These three .csv files are uploaded to the SQL server, via Bulk upload, in temporary dataframes.
+				    The temporary dataframes contain all parameters stored in varchar(255). Afterwards the data is input into the permanent dataframes from the temporary.
+				    In this process, some of the dataformats are changed to save memory. 
+				    Furthermore, data such as dates and numbers are change into the propper formats such as SMALLINT and DATE.
+				    The goal with uploading this data to the SQL server is to have it easily accessible in the following process where I plan to analyze and perhaps model some of the data.</p>
+<!-- Subtitel -->		    Below the python program is included.
+				    
+				    <h3 class="mt-5 mb-3">Python Program</h3>
 				    
 <!-- Paragraph -->		    <p> </p>
 				    
 <!-- Code -->			    <script src="https://gist.github.com/EsbenGammelgaard/00bffefe4cb2595c7386a8904fc8d29e.js"></script>
-				    
-<!-- Subtitel -->		    <h3 class="mt-5 mb-3">Typography</h3>
-				    
-<!-- Paragraph -->		    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-				    
-<!-- SubSubtitel -->		    <h5 class="my-3">Bullet Points:</h5>
-
-<!-- Bullets -->		    <ul class="mb-5">
-					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
-					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
-					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
-					</ul>
-					<ol class="mb-5">
-					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
-					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
-					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
-					</ol>
-					
-<!-- SubSubtitel -->			<h5 class="my-3">Quote Example:</h5>
-
-<!-- Quote -->				<blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
-						<p class="mb-2">You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity.</p>
-						<footer class="blockquote-footer">John Romero</footer>
-					</blockquote>
-					
-<!-- SubSubtitel -->			<h5 class="my-3">Table Example:</h5>
-
-<!-- Table -->				<table class="table table-striped my-5">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">First</th>
-								<th scope="col">Last</th>
-								<th scope="col">Handle</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td>Larry</td>
-								<td>the Bird</td>
-								<td>@twitter</td>
-							</tr>
-						</tbody>
-					</table>
 				   
 			    </div>
 				    
